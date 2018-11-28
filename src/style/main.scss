@@ -1,0 +1,61 @@
+html {
+    font-size: 62.5%; // 1rem is 10px
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'montserrat';
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+    margin-top: 2rem;
+    display: grid;
+    justify-items: center;
+}
+
+.sizeControl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* The animation code */
+@keyframes example {
+    //25% {background-color: yellow; right: 200px;}
+    50% {background-color: red; right: 400px;}
+    //75% {background-color: #938393; right: 200px;}
+    100% {background-color: #4CAF50; right: 0px;}
+
+}
+
+/* The element to apply the animation to */
+.button {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
